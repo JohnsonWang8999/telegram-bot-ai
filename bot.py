@@ -138,7 +138,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("❌ 操作已取消。")
     return ConversationHandler.END
 
-app = ApplicationBuilder().token("7722054827:AAHxhr-9sqb--0H645ZJIvP3oqkogT0_Tt8").build()
+app = ApplicationBuilder().token("7722054827:AAEFz3rPshUF53zhwzNUyp6jVo5bzN89Nms").build()
 
 conv_handler = ConversationHandler(
     entry_points=[CommandHandler("start", start), MessageHandler(filters.TEXT & ~filters.COMMAND, auto_start)],
