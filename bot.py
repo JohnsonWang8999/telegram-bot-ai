@@ -20,9 +20,7 @@ UNITS = [
     "testing"
 ]
 
-# States
 CHOOSE_ACTION, CHOOSE_MONTH, CHOOSE_UNIT, ENTER_AMOUNT, ENTER_DESC, VIEW_UNIT = range(6)
-
 user_data_temp = {}
 
 def load_data():
