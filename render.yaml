@@ -1,9 +1,10 @@
 services:
-  - type: worker
-    name: telegram-bot
+  - type: web
+    name: airbnb-billbot
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "bash start.sh"
+    plan: free
     envVars:
       - key: PYTHON_VERSION
         value: 3.11
